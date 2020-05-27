@@ -9,12 +9,76 @@
 </head>
 
 <body>
-    <div class="container">
+    <h3>Properties for the Parent (Grid Container)</h3>
+    <br>
+    <hr><br>
+    <h4>display: inline-grid;</h4>
+    <h4>grid-template-columns: repeat(4, 1fr);</h4>
+
+    <div class="container-1">
         <div class="item">item 1</div>
         <div class="item">item 2</div>
         <div class="item">item 3</div>
         <div class="item">item 4</div>
     </div>
+    <br>
+    <hr><br>
+    <h4>display: grid;</h4>
+    <h4>grid-template-columns: 40px 50px auto 50px 40px;</h4>
+    <h4>grid-template-rows: 25% 100px auto;</h4>
+    <h5>You can give multiple names to lines:</h5>
+    <h4> grid-template-rows: [row1-start] 25% [row1-end row2-start] 100px [third-line] auto [last-line];</h4>
+    <div class="container-2">
+        <div class="item">40px 25%</div>
+        <div class="item">50px</div>
+        <div class="item">auto</div>
+        <div class="item">50px</div>
+        <div class="item">40px</div>
+        <div class="item">100px</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+        <div class="item">item 9</div>
+        <div class="item">item 10</div>
+        <div class="item">auto</div>
+        <div class="item">item 12</div>
+        <div class="item">item 13</div>
+        <div class="item">item 14</div>
+        <div class="item">item 15</div>
+
+    </div>
+    <br>
+    <hr><br>
+    <h4>grid-template-columns: 1fr 1fr 3fr 1fr; </h4>
+    <h4>column-gap: 20px;</h4>
+    <h4>row-gap: 50px;</h4>
+    <div class="container-3">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+    <br>
+    <hr><br>
+    <h4>grid-template-areas:</h4>
+    <h4>"header header header header"</h4>
+    <h4>"main main . sidebar"</h4>
+    <h4>"footer footer footer footer";</h4>
+    <div class="container-4">
+        <div class="item item-a">header</div>
+        <div class="item item-b">main</div>
+        <div class="item item-c">sidebar</div>
+        <div class="item item-d">footer</div>
+        <div class="item">empty</div>
+
+    </div>
+    <br>
+    <hr><br>
+
+
 </body>
 
 </html>
