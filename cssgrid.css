@@ -185,6 +185,208 @@
     background-color: rgb(51, 10, 53);
     align-content: center;  
 }
+.container-26 {
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 50px 50px; 
+    background-color: rgb(51, 10, 53);
+    align-content: stretch;  
+}
+.container-27 {
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 50px 50px; 
+    background-color: rgb(51, 10, 53);
+    align-content: space-around;  
+}
+.container-28 {
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 50px 50px; 
+    background-color: rgb(51, 10, 53);
+    align-content: space-between;  
+}
+.container-29 {
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 50px 50px; 
+    background-color: rgb(51, 10, 53);
+    align-content: space-evenly;  
+}
+.container-30 {
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 50px 50px; 
+    background-color: rgb(51, 10, 53);
+    place-content: center end;  
+}
+
+.container-31 {
+    display: grid;
+    background-color: rgb(51, 10, 53);
+    grid-auto-columns: 60px;
+    grid-template-rows: 90px 90px;
+}
+.container-31 .item-a {
+    background-color: blueviolet;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.container-31 .item-b {
+    background-color: blueviolet;
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+.container-32 {
+    display: grid;
+    background-color: rgb(51, 10, 53);
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 30px 30px;
+    grid-auto-flow: row;
+}
+.container-32 .item-a {
+    background-color: blueviolet;
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.container-32 .item-e {
+    background-color: blueviolet;
+    grid-column: 5;
+    grid-row: 1 / 3;
+}
+
+.container-33 {
+    display: grid;
+    background-color: rgb(51, 10, 53);
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 30px 30px;
+    grid-auto-flow: column;
+}
+.container-33 .item-a {
+    background-color: blueviolet;
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.container-33 .item-e {
+    background-color: blueviolet;
+    grid-column: 5;
+    grid-row: 1 / 3;
+}
+
+.container-34 {
+    display: grid;
+    background-color: rgb(51, 10, 53);
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 30px 30px;
+    grid-auto-flow: dense;
+}
+.container-34 .item-a {
+    background-color: blueviolet;
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.container-34 .item-e {
+    background-color: blueviolet;
+    grid-column: 5;
+    grid-row: 1 / 3;
+}
+.container-35{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.container-36{
+    display: grid;
+    background-color: rgb(51, 10, 53); 
+    grid: 30px 30px 30px / repeat(5, 1fr);
+}
+.container-36 .item-a{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.container-36 .item-b{
+    grid-column: 3 / span 2;
+    grid-row: 2 / 4;
+}
+
+.container-36 .item-c{
+    grid-area: 1 / 4 / 3 / 6;
+}
+
+.container-37{
+    display: grid;
+    grid: 30px / repeat(4, 1fr);
+    background-color: rgb(51, 10, 53); 
+}
+
+.container-37 .item-m{
+    justify-self: start;
+}
+.container-37 .item-n{
+    justify-self: center;
+}
+.container-37 .item-o{
+    justify-self: end;
+}
+.container-37 .item-p{
+    justify-self: stretch;
+}
+
+.container-38{
+    display: grid;
+    grid: 30px / repeat(4, 1fr);
+    background-color: rgb(51, 10, 53); 
+    justify-items: center;
+}
+.container-39{
+    display: grid;
+    grid: 50px / repeat(4, 1fr);
+    background-color: rgb(51, 10, 53); 
+}
+
+.container-39 .item-q{
+    align-self: start;
+}
+.container-39 .item-r{
+    align-self: center;
+}
+.container-39 .item-s{
+    align-self: end;
+}
+.container-39 .item-t{
+    align-self: stretch;
+}
+
+.container-40{
+    display: grid;
+    grid: 50px / repeat(4, 1fr);
+    background-color: rgb(51, 10, 53); 
+}
+
+.container-40 .item-11{
+    place-self: start;
+}
+.container-40 .item-22{
+    place-self: center;
+}
+.container-40 .item-33{
+    place-self: end;
+}
+.container-40 .item-44{
+    place-self: start center;
+}
+
 .item-a {
     grid-area: header;
 }

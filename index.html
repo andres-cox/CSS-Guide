@@ -367,6 +367,225 @@
         <div class="item">item 8</div>
     </div>
 
+    <br>
+    <hr><br>
+    <h4>align-content: stretch;</h4>
+    <div class="container-26">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <br>
+    <hr><br>
+    <h4>align-content: space-around;</h4>
+    <div class="container-27">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <br>
+    <hr><br>
+    <h4>align-content: space-between;</h4>
+    <div class="container-28">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <br>
+    <hr><br>
+    <h4>align-content: space-evenly;</h4>
+    <div class="container-29">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <br>
+    <hr><br>
+    <h4>place-content: center end; //align-content justify-content</h4>
+    <div class="container-30">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <br>
+    <hr><br>
+    <h4>grid-auto-columns: 60px; //for implicit grid</h4>
+    <h4>grid-template-rows: 90px 90px;</h4>
+    <div class="container-31">
+        <div class="item-a">item a</div>
+        <div class="item-b">item b</div>
+    </div>
+    <br>
+    <hr><br>
+    <h4> grid-template-columns: 60px 60px 60px 60px 60px;</h4>
+    <h4>grid-template-rows: 30px 30px;</h4>
+    <h4>grid-auto-flow: row; //default</h4>
+    <div class="container-32">
+        <div class="item-a">item-a</div>
+        <div class="item">item-b</div>
+        <div class="item">item-c</div>
+        <div class="item">item-d</div>
+        <div class="item-e">item-e</div>
+    </div>
+    <br>
+    <hr><br>
+    <h4>grid-auto-flow: column;</h4>
+    <div class="container-33">
+        <div class="item-a">item-a</div>
+        <div class="item">item-b</div>
+        <div class="item">item-c</div>
+        <div class="item">item-d</div>
+        <div class="item-e">item-e</div>
+    </div>
+    <br>
+    <hr><br>
+    <h4>grid-auto-flow: dense; //dense only changes the visual order of your items and might cause them to appear out of
+        order</h4>
+    <div class="container-34">
+        <div class="item-a">item-a</div>
+        <div class="item">item-b</div>
+        <div class="item">item-c</div>
+        <div class="item">item-d</div>
+        <div class="item-e">item-e</div>
+    </div>
+    <br>
+    <hr><br>
+    <h4>A shorthand for setting all of the following properties in a single declaration: <br />
+        grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow</h4>
+    <h4>The following codes are equivalent:</h4>
+
+    <div class="container-35">
+        <div class="item">
+            .container {
+            grid: 100px 300px / 3fr 1fr;
+            }<br />
+
+            .container {<br />
+            grid-template-rows: 100px 300px;<br />
+            grid-template-columns: 3fr 1fr;<br />
+            }
+        </div>
+        <div class="item">
+            .container {
+            grid: auto-flow / 200px 1fr;
+            }<br />
+            .container {<br />
+            grid-auto-flow: row;<br />
+            grid-template-columns: 200px 1fr;<br />
+            }
+        </div>
+        <div class="item">
+            .container {<br />
+            grid: auto-flow dense 100px / 1fr 2fr;
+            }<br />
+            .container {<br />
+            grid-auto-flow: row dense;<br />
+            grid-auto-rows: 100px;<br />
+            grid-template-columns: 1fr 2fr;<br />
+            }
+        </div>
+    </div>
+    <br>
+    <hr><br>
+    <h3>Properties for the Children (Grid Items)</h3>
+    <br>
+    <hr><br>
+    <h4>grid: 30px 30px 30px / repeat(5, 1fr);</h4>
+    <h4>grid-column-start: 2;<br>
+        grid-column-end: 5;<br>
+        grid-row-start: 1;<br>
+        grid-row-end: 3;<br>
+    </h4>
+    <div class="container-36">
+        <div class="item item-a">item a</div>
+    </div>
+
+    <br>
+    <hr><br>
+    <h4>grid-column: 3 / span 2;<br>
+        grid-row: 2 / 4;<br>
+    </h4>
+    <div class="container-36">
+        <div class="item item-b">item b</div>
+    </div>
+    <br>
+    <hr><br>
+    <h4>grid-area: 1 / 4 / 3 / 6;</h4>
+    <h4>grid-area:grid-row-start / grid-column-start / grid-row-end / grid-column-end</h4>
+    <div class="container-36">
+        <div class="item item-c">item c</div>
+    </div>
+    <br>
+    <hr><br>
+    <h4>justify-self:</h4>
+    <div class="container-37">
+        <div class="item item-m">start</div>
+        <div class="item item-n">center</div>
+        <div class="item item-o">end</div>
+        <div class="item item-p">stretch</div>
+    </div>
+    <br>
+    <hr><br>
+    <h4>justify-items: center //To set alignment for all the items in a grid, use justify-items on grid container.
+    </h4>
+    <div class="container-38">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+    <br>
+    <hr><br>
+    <h4>align-self:</h4>
+    <div class="container-39">
+        <div class="item item-q">start</div>
+        <div class="item item-r">center</div>
+        <div class="item item-s">end</div>
+        <div class="item item-t">stretch</div>
+    </div>
+    <br>
+    <hr><br>
+    <h4>place-self: //align-self justify-self</h4>
+    <div class="container-40">
+        <div class="item item-11">start</div>
+        <div class="item item-22">center</div>
+        <div class="item item-33">end</div>
+        <div class="item item-44">start center</div>
+    </div>
+    <br>
+    <hr><br>
+
+
 </body>
 
 </html>
