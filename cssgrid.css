@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    background-color: rgb(51, 10, 53);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.item {
+    background-color: blueviolet;
+    
+}
