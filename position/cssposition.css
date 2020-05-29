@@ -1,0 +1,85 @@
+body {
+    margin: 10px;
+}
+div{
+    display: block;
+}
+
+.child{
+    padding: 5px;
+}
+
+.parent {
+    padding: 5px;
+    background-color: rgb(82, 80, 218);
+    height: 250px;
+}
+.parent .child-two{
+    position: sticky;
+    top: 10px;
+    right: 30px;
+}
+
+.parent-1 {
+    padding: 5px;
+    background-color: rgb(82, 80, 218);
+
+}
+
+.child-one {
+    background-color: rgb(96, 212, 96);
+    position: static;
+}
+
+.child-two {
+    background-color: rgb(212, 96, 106);
+
+}
+
+.child-three {
+    background-color: rgb(210, 212, 96);
+
+}
+
+.parent-2 {
+    padding: 5px;
+    background-color: rgb(82, 80, 218);
+}
+
+.parent-2 .child-one {
+    background-color: rgb(96, 212, 96);
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
+.parent-3 {
+    padding: 5px;
+    background-color: rgb(82, 80, 218);
+}
+
+.parent-3 .child-one {
+    background-color: rgb(96, 212, 96);
+    position: absolute;
+}
+
+.parent-4 {
+    padding: 5px;
+    background-color: rgb(82, 80, 218);
+    position: relative;
+
+}
+
+.parent-4 .child-one {
+    background-color: rgb(96, 212, 96);
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
+
+.fixed{
+    position: fixed;
+    top: 10px;
+    right: 0;
+}
+
