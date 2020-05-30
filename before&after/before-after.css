@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+p::before{
+    content: 'this is inside <p> content';
+    background-color: aqua;
+    display: block;
+    font-size: 2rem;
+}
+
+p::after{
+    content: 'this is inside <p> content';
+    background-color: aqua;
+    display: block;
+    font-size: 2rem;
+}
