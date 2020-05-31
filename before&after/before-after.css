@@ -1,22 +1,191 @@
+
 body {
     height: 100vh;
     background-color: grey;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 5rem;
 }
 
-p::before{
-    content: 'this is inside <p> content';
+h4 {
+    font-size: 3rem;
+}
+h4::before{
+    content: 'this is inside <h4> content (before)';
     background-color: aqua;
     display: block;
+    font-size: 1rem;
+}
+
+h4::after{
+    content: 'this is inside <h4> content (after)';
+    background-color: aqua;
+    display: block;
+    font-size: 1rem;
+}
+
+blockquote {
     font-size: 2rem;
 }
 
-p::after{
-    content: 'this is inside <p> content';
-    background-color: aqua;
-    display: block;
+blockquote::before{
+    content: open-quote;
+}
+blockquote::after{
+    content: close-quote;
+}
+
+p {
     font-size: 2rem;
 }
+a[data-tool-tip] {
+    position: relative;
+}
+
+a[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    display: block;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    background-color: rgb(143, 43, 25);
+    padding: 1em 2em;
+    transform: scale(0);
+    transition: transform ease-out 150ms;
+}   
+a[data-tool-tip]:hover::after {
+    transform: scale(1);
+
+}
+
+.counter{
+    padding: 2em 4em;
+    counter-reset: counter-sections;
+}
+
+.counter h1 {
+    font-size: 3rem;
+}
+
+.section {
+    position: relative;
+}
+.section::before {
+    counter-increment: counter-sections;
+    content: counter(counter-sections) ')';
+    position: absolute;
+    left: -2.5rem;
+    color: white;
+    border: 50%;
+}
+
+.intro {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: indigo;
+}
+
+.intro::before, .intro::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+
+.intro::before {
+    background-color: indigo;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+.intro::after {
+    background: grey;
+    left: -.1em;
+    right: -.1em;
+    z-index: -1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    margin: 1em;
+    background: rgba(0, 0, 0, 0.8);
+
+}
+
+.card::before,
+.card::after {
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    opacity: 1;
+    transition: transform ease-out 250ms;
+}
+
+.card::before {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(0,1);
+}
+  
+.card::after {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transform: scale(1,0);
+}
+  
+.card:hover::before {
+    transform: scale(1.05, 1);
+}
+  
+.card:hover::after {
+    transform: scale(1, 1.05);
+
+}
+
+.card__img {
+    max-width: 100%;
+    display: block;
+    transition: opacity ease-out 250ms;
+}
+.card:hover .card__img {
+      opacity: .4;
+}
+  
+
+.card__title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0;
+}
+
+.card__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity ease-out 250ms;
+}
+
+.card:hover .card__text {
+    opacity: 1;
+}
+  
