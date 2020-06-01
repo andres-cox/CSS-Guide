@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <link rel="stylesheet" href="cssunits.css">
+</head>
+
+<body>
+    <h2>Percentage & Pixels</h2>
+    <div class="box fifty-percent">50% (relative to parent)</div>
+    <div class="box one-hundred-px">100px (absolute length)</div>
+    <hr>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box one-hundred-px">100px</div>
+    </div>
+    <h2>Percentage & View Width/Height</h2>
+    <div class="box fifty-percent">50% (relative to parent)</div>
+    <div class="box fifty-vw">50vw (absolute length from the entire screen)</div>
+    <div class="box fifteen-vh">15vh (absolute length from the entire screen)</div>
+    <hr>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box fifty-vw">50vw</div>
+        <div class="box fifteen-vh">15vh</div>
+    </div>
+    <h2>em & rem</h2>
+    <div>font-size: 16px = 1rem (default)</div>
+    <div class="one-em">1em (relative to parent font-size)</div>
+    <div class="one-rem">1rem (relative to root font-size)</div>
+    <div class="two-em">2em</div>
+    <div class="two-rem">2rem</div>
+    <hr>
+    <div class="parent-font-size">
+        <div>font-size: 30px</div>
+        <div class="one-em">1em</div>
+        <div class="one-rem">1rem</div>
+        <div class="two-em">2em</div>
+        <div class="two-rem">2rem</div>
+    </div>
+    <hr>
+    <div class="icon-container">
+        <div class="icon em-icon"></div>
+        <span class="icon-text">1em icon</span>
+    </div>
+    <div class="icon-container">
+        <div class="icon rem-icon"></div>
+        <span class="icon-text">1rem icon</span>
+    </div>
+    <hr>
+    <div>font-size:30px</div>
+    <div class="icon-container large">
+        <div class="icon em-icon"></div>
+        <span class="icon-text">1em icon (scales with parent font-size)</span>
+    </div>
+    <div class="icon-container large">
+        <div class="icon rem-icon"></div>
+        <span class="icon-text">1rem icon</span>
+    </div>
+    <h2>font-size: em & rem & percentage</h2>
+    <div class="two-em">2em</div>
+    <div class="two-rem">2rem</div>
+    <div class="two-hundred-percent">200%</div>
+    <hr>
+    <div class="parent-font-size">
+        <div class="two-em">2em</div>
+        <div class="two-rem">2rem</div>
+        <div class="two-hundred-percent">200%</div>
+    </div>
+</body>
+
+</html>
