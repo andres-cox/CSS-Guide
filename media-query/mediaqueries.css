@@ -1,0 +1,73 @@
+body {
+    color: blue;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+
+/* all is for screen, print, speech */
+/* @media all and (max-width: 500px){   //this is the same as above  */
+@media (max-width: 500px){
+    h2{
+        color: rgb(32, 129, 32);
+    }
+}
+
+/* For printing the webpage */
+@media print {
+    h2, p{
+        color: rgb(129, 97, 8);
+    }
+}
+
+/* landscape is when width > height */
+@media (orientation: landscape) {
+    h3{
+        color: red;
+    }
+}
+
+/* AND */
+@media (orientation: landscape) and (max-width: 500px) {
+    h4{
+        color: purple;
+    }
+}
+
+/* OR */
+@media (orientation: landscape), (max-width: 500px) {
+    h5{
+        color: black;
+    }
+}
+
+/* mediaXl */
+@media screen and (min-width: 1171px) {
+    p{
+        color: fuchsia;
+    }
+}
+
+/* mediaLg */
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+    p{
+        color: skyblue;
+    }
+}
+
+/* mediaMd */
+@media screen and (max-width: 768px) {
+    p{
+        color: brown;
+    }
+}
+  
+/* mediaSm */
+@media screen and (max-width: 500px) {
+    p{
+        color: gray;
+    }
+}
