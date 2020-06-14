@@ -1,0 +1,74 @@
+body {
+    margin: 100px;
+    color: blanchedalmond;
+}
+
+.box {
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    margin: 5px;
+    background: green;
+}
+
+
+.one {
+    transition-duration: 500ms;
+    transition-property: background;    /* best practice for performance like mobile (with out this -> default is all. (all properties)) */
+}
+
+.one:hover {
+    background: red;
+}
+
+.two {
+    transition-duration: 500ms;
+    transition-property: background, transform;
+
+}
+
+.two:hover {
+    background: red;
+    transform: rotate(45deg);
+}
+
+.three {
+    transition-duration: 500ms;
+    transition-property: background, transform;     
+    transition-timing-function: linear; /* ease, ease-in, ease-out, ease-in-out, */
+    /* transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28); */
+    /* cubic-bezier can be edited with developer tools in Chrome with a curve graph*/
+
+}
+
+.three:hover {
+    background: red;
+    transform: rotate(45deg);
+}
+
+.four {
+    transition-duration: 500ms;
+    transition-property: background, transform;
+    transition-timing-function: linear;
+    transition-delay: 1500ms;
+
+}
+
+.four:hover {
+    background: red;
+    transform: rotate(45deg);
+}
+
+.five {
+    /* transition-duration: 500ms;
+    transition-property: background, transform;
+    transition-timing-function: linear;
+    transition-delay: 1500ms; */
+    transition: 500ms background linear 1500ms, 
+                500ms transform linear 1500ms;
+}
+
+.five:hover {
+    background: red;
+    transform: rotate(45deg);
+}
